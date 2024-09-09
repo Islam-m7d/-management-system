@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js.map"></script>
+    <script src="bootstrap-5.0.2-dist/js/popper.min.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/jquery-3.7.1.min.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="pro.css">
+    <script defer src="pro.js"></script>
+  <title>produc js</title>
+</head>
+<body>
+<div class="container">
+  <div class="head">
+    <h1><span class="text-danger" style="font-size: 55px;" > c</span>ruds</h1>
+    <p style="animation: color 2s ease-in-out infinite; margin-bottom: 0;">products management system</p>
+  </div>
+  <br>
+  <div class="input">
+    <input id="title" class="form-control" type="text"  placeholder="title">
+    <br>
+    <form action="" class=" price  ps-5" >
+      <input onkeyup="total()" id="price" type="number" placeholder="price">
+      <input onkeyup="total()" id="taxes" type="number" placeholder="taxes">
+      <input onkeyup="total()" id="ads" type="number" placeholder="ads">
+      <input onkeyup="total()" id="discount" type="number" placeholder="discount">
+      <span id="tol"></span>
+    </form>
+    <br>
+    <input id="count" class="form-control mb-3" type="text" placeholder="count">
+    <input id="category" class="form-control" type="text" placeholder="category">
+  <br>
+  <button id="create" class="btn btn-outline-success" style="width:100%; font-weight: bold; transition: 400ms ease-in-out;"> create</button>
+  </div>
+  <br>
+  <div class="output">
+    <input onkeyup="searchdata (this.value)" id="search" class="form-control" type="search" placeholder="search">
+  <div class="btn">
+    <button onclick="getmooodsc(this.id)"  id="sctitle" class="btn btn-primary" >search by tittle</button>
+  <button onclick="getmooodsc(this.id)" id="sccategory" class="btn btn-primary">search by category</button>
+</div>
+<br>
+<div id="btndel"></div>
+<table class="table text-light">
+  <thead class="the">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">title</th>
+      <th scope="col">price</th>
+      <th scope="col">taxes</th>
+      <th scope="col">ads</th>
+      <th scope="col">discount</th>
+      <th scope="col">total</th>
+      <th scope="col">category</th>
+      <th scope="col">update</th>
+      <th scope="col">delete</th>
+    </tr>
+  </thead>
+  <tbody id="tbody" class="table-group-divider">
+ 
+  </tbody>
+
+</table>
+</div>
+<br>
+<div>
+  
+</div>
+</div>
+
+
+</body>
+</html>
